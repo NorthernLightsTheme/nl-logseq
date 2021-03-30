@@ -4,6 +4,14 @@ NorthernLights Theme for Logseq
 # Preview
 ![NorthernLights-Logseq Preview](https://github.com/NorthernLightsTheme/nl-logseq/blob/main/logseq_screenshot.png)
 
+# Installation
+
+* On [Logseq](https://logseq.com/)
+  - Click the three dots on the upper right
+  - Click "All files"
+  - Click "logseq/custom.css"
+  - Paste in the code from [here](https://raw.githubusercontent.com/NorthernLightsTheme/nl-logseq/main/northernlights.css)
+
 # License
 ```
 MIT License
