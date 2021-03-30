@@ -1,0 +1,328 @@
+
+/*
+ * NorthernLights Theme Variables
+ */
+:root {
+  --background1: #16181E;
+  --background12: #21242d;
+  --background2: #2c303d;
+  --background3: #43495b;
+  --background4: #59617a;
+  --foreground: #B6BECC;
+  --foreground-neg: #2d2f33;
+  --yellow: #CCC966;
+  --yellow-bright: #fffa7f;
+  --orange: #CC9966;
+  --orange-bright: #ffbf7f;
+  --red: #CC6666;
+  --red-bright: #ff7f7f;
+  --green: #66CC77;
+  --green-bright: #7fff94;
+  --purple: #6666CC;
+  --purple-bright: #7f7fff;
+  --blue: #668ACC;
+  --blue-bright: #7facff;
+  --cyan: #66CCCA;
+  --cyan-bright: #7ffffc;
+  --magenta: #CC66C9;
+  --magenta-bright: #ff7ffa;
+  --selection: rgba(95,131,204, 0.8);
+}
+
+/*
+ * CodeMirror Styling
+ */
+div.extensions__code-lang {
+  background-color: var(--background3) !important;
+  font-size: 16px;
+  border-radius: 8px;
+  min-width: 48px;
+  text-align: center;
+}
+
+div.CodeMirror {
+  border-radius: 12px;
+  border: 8px solid var(--background3) !important;
+  background: var(--background2) !important;
+  color: var(--foreground);
+}
+
+.cm-s-default.CodeMirror,
+.cm-s-default .CodeMirror-gutters {
+  background-color: var(--background2) !important;
+  color: var(--white) !important;
+  border: none;
+}
+
+pre.CodeMirror-line {
+  border: 0;
+  background: var(--background2);
+}
+
+.CodeMirror-line::selection,
+.CodeMirror-line>span::selection,
+.CodeMirror-line>span>span::selection {
+  background: var(--selection) !important;
+}
+
+div.CodeMirror-linenumber {
+  color: var(--foreground) !important;
+  background-color: var(--background2) !important;
+}
+
+div.CodeMirror-gutters,
+div.CodeMirror-gutter {
+  background-color: var(--background2) !important;
+  border-color: rgba(255, 255, 255, 0.1) !important;
+}
+
+pre.CodeMirror-line span.cm-atom,
+pre.CodeMirror-line span.cm-builtin{
+  color: var(--purple);
+}
+
+pre.CodeMirror-line span.cm-string {
+  color: var(--purple);
+}
+
+pre.CodeMirror-line span.cm-keyword {
+  color: var(--green);
+}
+
+pre.CodeMirror-line span.cm-qualifier {
+  color: var(--cyan);
+}
+
+pre.CodeMirror-line span.cm-tag,
+pre.CodeMirror-line span.cm-number {
+  color: var(--purple);
+}
+
+pre.CodeMirror-line span.cm-variable-2,
+pre.CodeMirror-line span.cm-variable-3{
+  color: var(--green);
+}
+
+pre.CodeMirror-line span.cm-meta {
+  color: var(--yellow);
+}
+
+pre.CodeMirror-line span.cm-def {
+  color: var(--red);
+  text-decoration: underline;
+}
+
+pre.CodeMirror-line span.cm-comment {
+  color: var(--orange);
+}
+
+pre.CodeMirror-line span.cm-type {
+  color: var(--blue);
+}
+
+/*
+ * Logseq styling
+ */
+.dark-theme,
+html[data-theme=dark] {
+  --ls-primary-background-color: var(--background1);
+  --ls-secondary-background-color: var(--background2);
+  --ls-tertiary-background-color: var(--background3);
+  --ls-quaternary-background-color: var(--background4);
+  --ls-table-tr-even-background-color: rgba(44,48,61, 0.5); /* equivalent to background2@0.5 */
+  --ls-active-primary-color: var(--blue);
+  --ls-active-secondary-color: var(--blue-bright);
+  --ls-block-properties-background-color: var(--background2);
+  --ls-block-ref-link-text-color: #b5b9c8;
+  --ls-search-background-color: var(--background2);
+  --ls-border-color: var(--background12);
+  --ls-guideline-color: var(--background12);
+  --ls-menu-hover-color: var(--background2);
+  --ls-primary-text-color: var(--foreground);
+  --ls-secondary-text-color: var(--foreground-neg);
+  --ls-title-text-color: var(--blue);
+  --ls-link-text-color: var(--yellow);
+  --ls-link-text-hover-color: var(--yellow-bright);
+  --ls-link-ref-text-color: var(--blue);
+  --ls-link-ref-text-hover-color: var(--blue-bright);
+  --ls-tag-text-color: var(--ls-link-ref-text-color);
+  --ls-tag-text-hover-color: var(--ls-link-ref-text-hover-color);
+  --ls-slide-background-color: var(--background1);
+  --ls-block-bullet-border-color: var(--background4);
+  --ls-block-bullet-color: var(--background3);
+  --ls-block-highlight-color: var(--selection);
+  --ls-selection-background-color: var(--selection);
+  --ls-page-checkbox-color: var(--blue);
+  --ls-page-checkbox-border-color: var(--background1);
+  --ls-page-blockquote-color: var(--foreground);
+  --ls-page-blockquote-bg-color: var(--background2);
+  --ls-page-blockquote-border-color: #5d1f3d;
+  --ls-page-inline-code-color: var(--foreground);
+  --ls-page-inline-code-bg-color: var(--background3);
+  --ls-scrollbar-foreground-color: rgba(67, 73, 91, 0.9);
+  --ls-scrollbar-background-color: rgba(44, 48, 61, 1);
+  --ls-scrollbar-thumb-hover-color: rgba(102, 138, 204, 1);
+  --ls-head-text-color: var(--yellow-bright);
+  --ls-icon-color: var(--background4);
+  --ls-search-icon-color: var(--background4);
+  --ls-a-chosen-bg: var(--background2);
+  --ls-right-sidebar-code-bg-color: var(--background4);
+  --color-level-1: var(--background2);
+  --color-level-2: var(--background3);
+  --color-level-3: var(--background4);
+  --color-level-4: #6f7a99;
+  --color-level-5: #8692b7;
+  --color-level-6: #9caad6;
+}
+
+/*
+ * "next", "previous", "menu", "close-arrow" and "refresh" buttons
+ */
+.dark-theme a[title="Go Back"]:hover,
+.dark-theme a[title="Go Forward"]:hover,
+.dark-theme .cp__right-menu-button:hover,
+.dark-theme .refresh:hover,
+.dark-theme .close-arrow:hover{
+  border-radius: 4px;
+  background: var(--background2);
+}
+
+/*
+ * Search Field
+ */
+.dark-theme #search_field {
+  background: var(--background2)
+}
+
+/*
+ * Title menu
+ */
+.dark-theme [title="More options"] svg {
+  color: rgba(102, 138, 204, 0.8);
+}
+
+.dark-theme ::selection {
+  background: var(--selection);
+}
+
+/*
+ * Text transformations
+ */
+
+/* highlight */
+.dark-theme mark {
+  background: var(--green);
+  color: var(--foreground-neg);
+}
+
+/*  bold, italics and underline */
+.dark-theme b,
+.dark-theme strong,
+.dark-theme i,
+.dark-theme u{
+  color: var(--orange-bright);
+}
+
+/*
+ * Highlights [[references]] on hover
+ */
+.dark-theme .page-reference:hover {
+  background: var(--background2);
+}
+
+/*
+ * Brackets aren't that important to see
+ * let's treat them as whitespaces
+ */
+.dark-theme .page-reference .text-gray-500 {
+  color: var(--foreground);
+  opacity: .2;
+}
+
+/* 
+ * Block references
+ */
+.dark-theme .block-ref {
+  color: var(--foreground);
+  border-bottom-color: var(--background2);
+}
+
+/*
+ * Blocks Properties
+ */
+div.blocks-properties {
+  border-radius: 12px;
+}
+
+/* 
+ * Selected block or higlighted page link
+ */
+.dark-theme .ls-block.selected .page-ref,
+.dark-theme mark .page-ref {
+  color: #7facff;
+}
+
+.dark-theme .ls-block.selected .page-ref:hover,
+.dark-theme mark .page-ref:hover {
+  color: #b5b9c8;
+}
+
+/*
+ * Checkbox 
+ */
+.dark-theme .marker-switch {
+  color: var(--foreground-neg);
+  background: var(--yellow);
+}
+
+.dark-theme .marker-switch:hover {
+  color: var(--foreground-neg);
+  background: var(--yellow-bright);
+}
+
+/*
+ * Sidebar
+ */
+.dark-theme .cp__right-sidebar.is-open {
+  background: transparent;
+}
+
+/*
+ * Show a hint on hover as handle to the sidebar
+ * (would otherwise be invisible)
+ * Comment out this rule if you don't want it.
+ */
+.dark-theme .cp__right-sidebar.is-open:hover {
+  border-left: 1px solid rgba(102, 138, 204, 0.25);
+}
+
+/*
+ * Apply radius and padding to sidebar
+ */
+.dark-theme .cp__right-sidebar .sidebar-item {
+  border-radius: 12px;
+  padding: 24px;
+}
+
+/*
+ * Other UI Elements
+ */
+
+/* <hr> border color should be clearer */
+.cp__settings-main hr {
+  border-color: var(--foreground);
+}
+
+/* Toggles in Settings Modal */
+.ui__toggle.is-small .wrapper {
+  background-color: var(--blue);
+}
+
+/* Button in embed should reflect the theme */
+.ui__button {
+  background-color: var(--blue);
+}
+
+.ui__button:hover {
+  background-color: var(--blue-bright);
+}
