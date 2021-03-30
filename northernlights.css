@@ -326,3 +326,8 @@ div.blocks-properties {
 .ui__button:hover {
   background-color: var(--blue-bright);
 }
+
+/* Remove left border */
+#sidebar-nav-wrapper {
+  display: none !important;
+}
