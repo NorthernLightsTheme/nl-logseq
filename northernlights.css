@@ -238,7 +238,7 @@ html[data-theme=dark] {
   opacity: .2;
 }
 
-/* 
+/*
  * Block references
  */
 .dark-theme .block-ref {
@@ -253,7 +253,7 @@ div.blocks-properties {
   border-radius: 12px;
 }
 
-/* 
+/*
  * Selected block or higlighted page link
  */
 .dark-theme .ls-block.selected .page-ref,
@@ -267,7 +267,7 @@ div.blocks-properties {
 }
 
 /*
- * Checkbox 
+ * Checkbox
  */
 .dark-theme .marker-switch {
   color: var(--foreground-neg);
@@ -317,16 +317,20 @@ div.blocks-properties {
   background-color: var(--blue);
 }
 
-/* Button in embed should reflect the theme */
-.ui__button {
-  background-color: var(--blue);
+/* Buttons should reflect the theme */
+.ui__button, button.bg-indigo-600 {
+  background-color: var(--blue) !important;
 }
 
-.ui__button:hover {
-  background-color: var(--blue-bright);
+button.bg-white {
+  background-color: var(--foreground) !important;
+  color: var(--foreground-neg) !important;
 }
 
-/* Remove left border */
+.ui__button:hover, button.bg-indigo-600:hover {
+  background-color: var(--blue-bright) !important;
+}
+
 #sidebar-nav-wrapper {
   display: none !important;
 }
