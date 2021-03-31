@@ -41,7 +41,7 @@ div.extensions__code-lang {
 
 div.CodeMirror {
   border-radius: 12px;
-  border: 8px solid var(--background3) !important;
+  border: 4px solid var(--background3) !important;
   background: var(--background2) !important;
   color: var(--foreground);
 }
