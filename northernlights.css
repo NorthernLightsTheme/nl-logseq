@@ -138,7 +138,7 @@ html[data-theme=dark] {
   --ls-guideline-color: var(--background12);
   --ls-menu-hover-color: var(--background2);
   --ls-primary-text-color: var(--foreground);
-  --ls-secondary-text-color: var(--foreground-neg);
+  --ls-secondary-text-color: var(--foreground);
   --ls-title-text-color: var(--blue);
   --ls-link-text-color: var(--yellow);
   --ls-link-text-hover-color: var(--yellow-bright);
@@ -190,7 +190,7 @@ html[data-theme=dark] {
  * Search Field
  */
 .dark-theme #search_field {
-  background: var(--background2)
+  background: var(--background2);
 }
 
 /*
@@ -272,6 +272,10 @@ div.blocks-properties {
 .dark-theme .marker-switch {
   color: var(--foreground-neg);
   background: var(--yellow);
+}
+
+input[type=checkbox] {
+  border-radius: 4px;
 }
 
 .dark-theme .marker-switch:hover {
