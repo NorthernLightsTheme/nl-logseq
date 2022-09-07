@@ -131,6 +131,7 @@ html[data-theme=dark] {
   --ls-table-tr-even-background-color: rgba(44,48,61, 0.5); /* equivalent to background2@0.5 */
   --ls-active-primary-color: var(--blue);
   --ls-active-secondary-color: var(--blue-bright);
+  --ls-page-properties-background-color: var(--background2);
   --ls-block-properties-background-color: var(--background2);
   --ls-block-ref-link-text-color: #b5b9c8;
   --ls-search-background-color: var(--background2);
@@ -166,12 +167,17 @@ html[data-theme=dark] {
   --ls-search-icon-color: var(--background4);
   --ls-a-chosen-bg: var(--background2);
   --ls-right-sidebar-code-bg-color: var(--background4);
+  --ls-main-content-max-width: 100%;
   --color-level-1: var(--background2);
   --color-level-2: var(--background3);
   --color-level-3: var(--background4);
   --color-level-4: #6f7a99;
   --color-level-5: #8692b7;
   --color-level-6: #9caad6;
+}
+
+.block-properties, .page-properties {
+  border-radius: 8px;
 }
 
 /*
@@ -272,6 +278,8 @@ div.blocks-properties {
 .dark-theme .marker-switch {
   color: var(--foreground-neg);
   background: var(--yellow);
+  border-radius: 4px;
+  margin-right: 0.25rem;
 }
 
 input[type=checkbox] {
@@ -288,6 +296,7 @@ input[type=checkbox] {
  */
 .dark-theme .cp__right-sidebar.is-open {
   background: transparent;
+  border: 1px solid transparent;
 }
 
 /*
